@@ -10,7 +10,7 @@ import json
 import linklink as link
 import torch.nn.functional as F
 
-from .base_solver import BaseSolver
+from prototype.solver.base_solver import BaseSolver
 from prototype.utils.dist import link_dist, DistModule, broadcast_object
 from prototype.utils.misc import makedir, create_logger, get_logger, count_params, count_flops, \
     param_group_all, AverageMeter, accuracy, load_state_model, load_state_optimizer, mixup_data, \

@@ -1,6 +1,6 @@
 import os.path as osp
 import json
-from .base_dataset import BaseDataset
+from prototype.data.base_dataset import BaseDataset
 from prototype.data.image_reader import build_image_reader
 
 

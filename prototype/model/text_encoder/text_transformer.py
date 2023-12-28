@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 from typing import Tuple, Union, List
-from .base_transformer import Transformer, LayerNorm
+from prototype.model.base_transformer import Transformer, LayerNorm
 from prototype.model.utils.text_utils.simple_tokenizer import SimpleTokenizer as _Tokenizer
 from prototype.model.utils.text_utils.mask_tokens import MaskTokens
 

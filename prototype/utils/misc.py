@@ -10,7 +10,7 @@ try:
 except ImportError:
     print('Import metrics failed!')
 
-from .dist import simple_group_split
+from prototype.utils.dist import simple_group_split
 import yaml
 from easydict import EasyDict
 

@@ -1,11 +1,11 @@
 from torch.utils.data import DataLoader
 from torchvision.transforms import functional as TF
 import torch
-from .datasets import ClipDataset, ClipDatasetRanked
-from .transforms import build_transformer
-from .sampler import build_sampler
-from .metrics import build_evaluator
-from .imagenet_dataloader import build_common_augmentation
+from prototype.data.datasets import ClipDataset, ClipDatasetRanked
+from prototype.data.transforms import build_transformer
+from prototype.data.sampler import build_sampler
+from prototype.data.metrics import build_evaluator
+from prototype.data.imagenet_dataloader import build_common_augmentation
 from easydict import EasyDict
 
 

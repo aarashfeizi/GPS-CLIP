@@ -1,10 +1,10 @@
 import linklink as link
 
 from torch.optim import SGD, RMSprop, Adadelta, Adagrad, Adam, AdamW  # noqa F401
-from .lars import LARS  # noqa F401
-from .AdamW_SGD import AdamW_SGD, FP16AdamW_SGD  # noqa F401
-from .fp16_optim import FP16SGD, FP16RMSprop, FP16AdamW  # noqa F401
-# from .adamw_sgd import AdamW_SGD
+from prototype.optimizer.lars import LARS  # noqa F401
+from prototype.optimizer.AdamW_SGD import AdamW_SGD, FP16AdamW_SGD  # noqa F401
+from prototype.optimizer.fp16_optim import FP16SGD, FP16RMSprop, FP16AdamW  # noqa F401
+# from prototype.optimizer.adamw_sgd import AdamW_SGD
 try:
     from linklink.optim import FusedFP16SGD
     from linklink.optim import FusedFP16AdamW

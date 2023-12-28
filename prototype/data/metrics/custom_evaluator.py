@@ -2,7 +2,7 @@ import math
 import json
 import numpy as np
 from sklearn import metrics
-from .base_evaluator import Evaluator, Metric
+from prototype.data.base_evaluator import Evaluator, Metric
 from prototype.utils.misc import get_logger
 
 

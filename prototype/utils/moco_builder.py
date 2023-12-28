@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import linklink as link
-from .dist import simple_group_split
+from prototype.utils.dist import simple_group_split
 
 
 class MoCo(nn.Module):

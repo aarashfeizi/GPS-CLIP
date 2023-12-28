@@ -1,4 +1,4 @@
-from .scheduler import Step, StepDecay, Cosine, Poly # noqa F401
+from prototype.lr_scheduler.scheduler import Step, StepDecay, Cosine, Poly # noqa F401
 
 
 def epoch_to_iter(config):

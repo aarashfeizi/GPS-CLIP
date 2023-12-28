@@ -1,6 +1,6 @@
 import torch
 from collections import OrderedDict
-from .misc import get_logger
+from prototype.utils.misc import get_logger
 
 
 class EMA(object):

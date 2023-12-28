@@ -8,17 +8,17 @@ from torch import nn
 import numpy as np
 import os
 
-from .image_encoder.visual_transformer import visual_transformer_B32, visual_transformer_B16
-from .image_encoder.modified_resnet import modified_resnet_R50, modified_resnet_R101
-from .text_encoder.text_transformer import text_transformers
-from .utils.nnclr_modules import NNMemoryBankModule
+from prototype.model.image_encoder.visual_transformer import visual_transformer_B32, visual_transformer_B16
+from prototype.model.image_encoder.modified_resnet import modified_resnet_R50, modified_resnet_R101
+from prototype.model.text_encoder.text_transformer import text_transformers
+from prototype.model.utils.nnclr_modules import NNMemoryBankModule
 
 import linklink as link
 from linklink.nn import SyncBatchNorm2d
 from linklink.nn import syncbnVarMode_t
 from random import choice
 
-from .clip import CLIP
+from prototype.model.clip import CLIP
 
 
 BN = None

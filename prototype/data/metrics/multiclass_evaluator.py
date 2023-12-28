@@ -1,7 +1,7 @@
 import json
 import torch
 import numpy as np
-from .base_evaluator import Evaluator, Metric
+from prototype.data.base_evaluator import Evaluator, Metric
 
 
 class MultiClsMetric(Metric):
