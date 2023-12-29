@@ -53,9 +53,10 @@ def initialize(backend='nccl'):
         if pos2 < 0:
             pos2 = 1000
         node_list = node_list[:min(pos1, pos2)].replace('[', '')
-    addr = node_list.replace('-', '.')
+    # addr = node_list.replace('-', '.')
     os.environ['MASTER_PORT'] = port
-    os.environ['MASTER_ADDR'] = addr
+    # os.environ['MASTER_ADDR'] = addr
+    os.environ['MASTER_ADDR'] = node_list
     os.environ['WORLD_SIZE'] = str(ntasks)
     os.environ['RANK'] = str(proc_id)
     if backend == 'nccl':
