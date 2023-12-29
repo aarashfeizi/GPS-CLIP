@@ -10,10 +10,10 @@ import torch
 import torch.nn as nn
 import linklink as link
 
-from .dist import link_dist
-from .cls_solver import ClsSolver
-from .misc import parse_config, load_state_model
-from .nnie_helper import generate_nnie_config
+from prototype.utils.dist import link_dist
+from prototype.solver.cls_solver import ClsSolver
+from prototype.utils.misc import parse_config, load_state_model
+from prototype.utils.nnie_helper import generate_nnie_config
 
 
 class Wrapper(nn.Module):

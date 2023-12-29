@@ -1,5 +1,5 @@
 from pprint import pprint
-from .misc import parse_config
+from prototype.utils.misc import parse_config
 
 
 class BaseSolver(object):
