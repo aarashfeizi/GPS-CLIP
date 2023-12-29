@@ -5,7 +5,7 @@ import torch
 import torchvision.transforms as transforms
 import torchvision.transforms.functional as TF
 # import springvision
-from prototype.data.clsa_augmentation import CLSAAug
+from .clsa_augmentation import CLSAAug
 
 
 class ToGrayscale(object):

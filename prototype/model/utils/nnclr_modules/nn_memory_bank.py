@@ -4,7 +4,7 @@
 # All Rights Reserved
 
 import torch
-from prototype.model.memory_bank import MemoryBankModule
+from .memory_bank import MemoryBankModule
 
 
 class NNMemoryBankModule(MemoryBankModule):

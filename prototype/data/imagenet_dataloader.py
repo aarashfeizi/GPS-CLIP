@@ -2,13 +2,13 @@ import random
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-from prototype.data.datasets import ImageNetDataset
-from prototype.data.transforms import build_transformer, TwoCropsTransform, CALSMultiResolutionTransform, GaussianBlur, CLSAAug, RandomCropMinSize, SLIPTransform
-from prototype.data.auto_augmentation import ImageNetPolicy
-from prototype.data.sampler import build_sampler
-from prototype.data.metrics import build_evaluator
-from prototype.data.pipelines import ImageNetTrainPipeV2, ImageNetValPipeV2
-from prototype.data.nvidia_dali_dataloader import DaliDataloader
+from .datasets import ImageNetDataset
+from .transforms import build_transformer, TwoCropsTransform, CALSMultiResolutionTransform, GaussianBlur, CLSAAug, RandomCropMinSize, SLIPTransform
+from .auto_augmentation import ImageNetPolicy
+from .sampler import build_sampler
+from .metrics import build_evaluator
+from .pipelines import ImageNetTrainPipeV2, ImageNetValPipeV2
+from .nvidia_dali_dataloader import DaliDataloader
 
 
 def build_common_augmentation(aug_type):

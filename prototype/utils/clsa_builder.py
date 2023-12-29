@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import linklink as link
-from prototype.utils.dist import simple_group_split
+from .dist import simple_group_split
 
 class CLSA(nn.Module):
     def __init__(self, encoder_q, encoder_k, K=65536, m=0.999, T=0.07, mlp=False, group_size=8, ratio=1.0, avg=False):

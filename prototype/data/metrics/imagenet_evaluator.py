@@ -2,7 +2,7 @@ import json
 import yaml
 import torch
 import numpy as np
-from prototype.data.base_evaluator import Evaluator, Metric
+from .base_evaluator import Evaluator, Metric
 
 
 class ClsMetric(Metric):

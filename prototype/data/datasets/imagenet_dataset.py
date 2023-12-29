@@ -1,7 +1,7 @@
 import os.path as osp
 import json
-from prototype.data.base_dataset import BaseDataset
-from prototype.data.image_reader import build_image_reader
+from .base_dataset import BaseDataset
+from .image_reader import build_image_reader
 
 
 class ImageNetDataset(BaseDataset):

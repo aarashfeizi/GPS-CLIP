@@ -11,20 +11,20 @@ import json
 import linklink as link
 import torch.nn.functional as F
 
-from prototype.solver.base_solver import BaseSolver
-from prototype.utils.dist import link_dist, DistModule, broadcast_object
-from prototype.utils.misc import makedir, create_logger, get_logger, count_params, count_flops, \
+from .base_solver import BaseSolver
+from .dist import link_dist, DistModule, broadcast_object
+from .misc import makedir, create_logger, get_logger, count_params, count_flops, \
     param_group_all, AverageMeter, accuracy, load_state_model, load_state_optimizer, mixup_data, \
     mix_criterion, modify_state, cutmix_data, parse_config
-from prototype.utils.ema import EMA
+from .ema import EMA
 from prototype.model import model_entry
 from prototype.optimizer import optim_entry, FP16RMSprop, FP16SGD, FusedFP16SGD, FP16AdamW, FusedFP16AdamW, FP16AdamW_SGD
 from prototype.lr_scheduler import scheduler_entry
 from prototype.data import build_imagenet_train_dataloader, build_imagenet_test_dataloader
 from prototype.data import build_clip_dataloader
 from prototype.loss_functions import LabelSmoothCELoss, ClipInfoCELoss
-# from prototype.utils.user_analysis_helper import send_info
-from prototype.utils.grad_clip import clip_grad_norm_, clip_grad_value_, clip_param_grad_value_
+# from .user_analysis_helper import send_info
+from .grad_clip import clip_grad_norm_, clip_grad_value_, clip_param_grad_value_
 
 
 class DataPrefetcher():
@@ -745,7 +745,7 @@ def main():
 
     args = parser.parse_args()
     # build solver
-    import prototype.solver.crash_on_ipy
+    import .crash_on_ipy
     solver = ClsSolver(args.config)
     # evaluate or train
     if args.evaluate:

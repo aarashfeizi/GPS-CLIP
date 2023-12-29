@@ -8,5 +8,5 @@ can be combined with any lightly model.
 # Copyright (c) 2021. Lightly AG and its affiliates.
 # All Rights Reserved
 
-from prototype.model.nn_memory_bank import NNMemoryBankModule
-from prototype.model.memory_bank_cuda import MemoryBankModule
+from .nn_memory_bank import NNMemoryBankModule
+from .memory_bank_cuda import MemoryBankModule

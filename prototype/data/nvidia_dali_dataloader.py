@@ -2,7 +2,7 @@ import torch
 import numpy as np
 
 from nvidia.dali.plugin.pytorch import to_torch_type, feed_ndarray
-from prototype.data.pipelines import _PipelineBase
+from .pipelines import _PipelineBase
 
 
 # modified from linklink.dali

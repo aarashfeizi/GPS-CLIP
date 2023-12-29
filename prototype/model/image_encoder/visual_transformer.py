@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 from torch import nn
-from prototype.model.base_transformer import Transformer, LayerNorm
+from .base_transformer import Transformer, LayerNorm
 
 class VisualTransformer(nn.Module):
     def __init__(self, input_resolution: int, patch_size: int, width: int, layers: int, heads: int, embed_dim: int, checkpoint: bool, dropout: float=0, emb_dropout: float=0):

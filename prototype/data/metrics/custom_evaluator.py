@@ -2,8 +2,8 @@ import math
 import json
 import numpy as np
 from sklearn import metrics
-from prototype.data.base_evaluator import Evaluator, Metric
-from prototype.utils.misc import get_logger
+from .base_evaluator import Evaluator, Metric
+from .misc import get_logger
 
 
 class CustomMetric(Metric):

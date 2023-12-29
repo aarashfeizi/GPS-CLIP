@@ -6,8 +6,8 @@ import requests
 import numpy as np
 import time
 from typing import List
-from prototype.data.base_dataset import BaseDataset
-from prototype.data.image_reader import build_image_reader
+from .base_dataset import BaseDataset
+from .image_reader import build_image_reader
 import linklink as link
 import random
 import os
