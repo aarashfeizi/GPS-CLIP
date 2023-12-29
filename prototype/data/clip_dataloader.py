@@ -12,7 +12,8 @@ from easydict import EasyDict
 def _collate_fn(batch):
     batch = list(filter(lambda x: x is not None, batch))
     image_ids = [_['image_id'] for _ in batch]
-    filenames = [_['filename'] for _ in batch]
+    filenames = [_['filename'] for _ in batch] 
+    filenames = [f.replace('.jpeg', '.jpg') for f in filenames]
     if type(batch[0]['image']) == list:
         images = [torch.stack([_['image'][0] for _ in batch]), torch.stack([_['image'][1] for _ in batch]), \
                   torch.stack([_['image'][2] for _ in batch]), torch.stack([_['image'][3] for _ in batch])]
