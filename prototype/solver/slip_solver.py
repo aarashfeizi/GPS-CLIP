@@ -900,7 +900,7 @@ def main():
 
     args = parser.parse_args()
     # build solver
-    import .crash_on_ipy
+    import prototype.solver.crash_on_ipy
     solver = ClsSolver(args.config)
     # evaluate or train
     if args.evaluate:
