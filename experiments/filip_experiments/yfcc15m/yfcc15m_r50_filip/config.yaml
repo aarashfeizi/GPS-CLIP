@@ -99,7 +99,7 @@ data:
         meta_file: [
                     # '/mnt/lustre/share_data/zhaolichen/dataset/gvm_gcc/gcc_train_v0.1.json',
 #                    '/mnt/cache/share_data/liyangguang/gcc_train_v0.1.json',
-                   '/network/datasets/yfcc15m/imagenet_info/yfcc15m_clean_open_data.json',
+                   '/network/scratch/f/feiziaar/yfcc15m/imagenet_info/yfcc15m_clean_open_data.json',
                     ]
         image_reader:
             type: pil

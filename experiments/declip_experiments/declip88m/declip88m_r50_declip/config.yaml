@@ -78,7 +78,7 @@ data:
                     '/network/datasets/yfcc15m/images',
                    ]
         meta_file: [
-                   '/network/datasets/yfcc15m/imagenet_info/yfcc15m_clean_open_data.json',
+                   '/network/scratch/f/feiziaar/yfcc15m/imagenet_info/yfcc15m_clean_open_data.json',
                     ]
         image_reader:
             type: pil

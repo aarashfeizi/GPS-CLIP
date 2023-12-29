@@ -194,7 +194,6 @@ class ClipDataset(BaseDataset):
             #     print('***************************************', caption)
             assert self.is_contains_chinese(caption) == False
             img_bytes = self.read_file(curr_meta)
-            filename = filename.replace('.jpeg', '.jpg')
             img = self.image_reader(img_bytes, filename)
             if self.transform is not None:
                 img = self.transform(img)
