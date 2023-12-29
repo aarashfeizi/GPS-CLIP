@@ -94,7 +94,7 @@ data:
     train:
         root_dir: [
 #                    'cluster4:s3://GCC/AdamGCC',
-                    'cluster2:s3://yfcc100m-part/data/',
+                    '/network/datasets/yfcc15m/images',
                    ]
         meta_file: [
                     # '/mnt/lustre/share_data/zhaolichen/dataset/gvm_gcc/gcc_train_v0.1.json',
