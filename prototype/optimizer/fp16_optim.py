@@ -1,7 +1,7 @@
 from torch.optim.optimizer import required
 from torch.optim import SGD, RMSprop, AdamW
 from linklink.fp16 import FP16_Optimizer
-# from prototype.optimizer.adam_clip import AdamWithClip, AdamWWithClip
+# from .adam_clip import AdamWithClip, AdamWWithClip
 
 
 class FP16SGD(FP16_Optimizer):

@@ -22,7 +22,7 @@ from prototype.lr_scheduler import scheduler_entry
 from prototype.data import build_imagenet_train_dataloader, build_imagenet_test_dataloader
 from prototype.data import build_clip_dataloader
 from prototype.loss_functions import LabelSmoothCELoss, ClipInfoCELoss, SimsiamLoss, NTXentLoss
-# from .user_analysis_helper import send_info
+# from prototype.utils.user_analysis_helper import send_info
 from prototype.utils.grad_clip import clip_grad_norm_, clip_grad_value_, clip_param_grad_value_
 
 

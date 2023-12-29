@@ -5,7 +5,7 @@ model:
         image_encode:
             embed_dim: 3072
         text_encode:
-            bpe_path: '/network/datasets/yfcc15m/text_info/bpe_simple_vocab_16e6.txt.gz'
+            bpe_path: '../../../../text_info/bpe_simple_vocab_16e6.txt.gz'
             text_encode_type: Transformer #Transformer,Bert,GPT2,Bert_gvx
             text_model_utils:
                 random: False
@@ -74,7 +74,7 @@ data:
                     'cluster2:s3://yfcc100m-part/data/',
                    ]
         meta_file: [
-                   '/network/datasets/yfcc15m/imagenet_info/yfcc15m_clean_open_data.json',
+                   '../../../../imagenet_info/yfcc15m_clean_open_data.json',
                     ]
         image_reader:
             type: pil
@@ -96,7 +96,7 @@ data:
         pin_memory: False
         test:
             root_dir: '/mnt/lustre/share/images/val/'
-            meta_file: '/network/datasets/yfcc15m/imagenet_info/val_official.json'
+            meta_file: '../../../../imagenet_info/val_official.json'
             # you can change it to imagenet_info relative path, file already in gitlab
             image_reader:
                 type: pil

@@ -173,8 +173,8 @@ def count_params(model):
 
 def count_flops(model, input_shape):
     try:
-        from .layer import CondConv2d
-        from .layer import WeightNet, WeightNet_DW
+        from prototype.model.layer import CondConv2d
+        from prototype.model.layer import WeightNet, WeightNet_DW
     except NotImplementedError:
         print('Check whether the file exists!')
 
